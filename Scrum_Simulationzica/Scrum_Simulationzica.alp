@@ -1,0 +1,3740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*************************************************
+	         AnyLogic Project File 
+*************************************************	         
+-->
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.1.0.201706091042" AlpVersion="8.0.4">
+<Model>
+	<Id>1507912910295</Id>
+	<Name><![CDATA[Scrum_Simulationzica]]></Name>
+	<EngineVersion>6</EngineVersion>
+	<JavaPackageName><![CDATA[scrum_simulation]]></JavaPackageName>
+	<ModelTimeUnit><![CDATA[Day]]></ModelTimeUnit>
+	<ActiveObjectClasses>
+		<!--   =========   Active Object Class   ========  -->
+		<ActiveObjectClass>
+			<Id>1507912910300</Id>
+			<Name><![CDATA[Main]]></Name>
+			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
+			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<Generic>false</Generic>
+			<GenericParameter>
+				<Id>1507912910299</Id>
+				<Name><![CDATA[1507912910299]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<GenericParameter>
+				<Id>1508248913754</Id>
+				<Name><![CDATA[1508248913754]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<GenericParameter>
+				<Id>1508248913770</Id>
+				<Name><![CDATA[1508248913770]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
+			<MakeDefaultViewArea>true</MakeDefaultViewArea>
+			<SceneGridColor/>
+			<SceneBackgroundColor/>
+			<AgentProperties>
+	 			<SpaceType>CONTINUOUS</SpaceType>			
+				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
+			</AgentProperties>
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1507968000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1507912910297</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<ConnectionsId>1507912910296</ConnectionsId>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1508248912662</Id>
+					<Name><![CDATA[iterations]]></Name>
+					<X>680</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912671</Id>
+					<Name><![CDATA[finishPrevisionTimeB]]></Name>
+					<X>690</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912674</Id>
+					<Name><![CDATA[finishPrevisionTimeC]]></Name>
+					<X>690</X><Y>260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912678</Id>
+					<Name><![CDATA[finishPrevisionTimeA]]></Name>
+					<X>690</X><Y>220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912681</Id>
+					<Name><![CDATA[finishTimeTeamA]]></Name>
+					<X>840</X><Y>220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912685</Id>
+					<Name><![CDATA[finishTimeTeamB]]></Name>
+					<X>840</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912690</Id>
+					<Name><![CDATA[finishTimeTeamC]]></Name>
+					<X>840</X><Y>260</Y>
+					<Label><X>5</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912694</Id>
+					<Name><![CDATA[currentStorie]]></Name>
+					<X>680</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Storie]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912698</Id>
+					<Name><![CDATA[storiesB]]></Name>
+					<X>790</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912701</Id>
+					<Name><![CDATA[storiesC]]></Name>
+					<X>790</X><Y>70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912705</Id>
+					<Name><![CDATA[storiesA]]></Name>
+					<X>790</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912708</Id>
+					<Name><![CDATA[bangForTheBucket]]></Name>
+					<X>610</X><Y>560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912713</Id>
+					<Name><![CDATA[acumulator]]></Name>
+					<X>510</X><Y>560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912718</Id>
+					<Name><![CDATA[BfbAac]]></Name>
+					<X>200</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912723</Id>
+					<Name><![CDATA[BfbBac]]></Name>
+					<X>50</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912727</Id>
+					<Name><![CDATA[BfbCac]]></Name>
+					<X>120</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912731</Id>
+					<Name><![CDATA[valuePointsBurnDown]]></Name>
+					<X>800</X><Y>580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[764.5]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912736</Id>
+					<Name><![CDATA[BfbB]]></Name>
+					<X>200</X><Y>340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912740</Id>
+					<Name><![CDATA[BfbC]]></Name>
+					<X>120</X><Y>340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508248912745</Id>
+					<Name><![CDATA[BfbA]]></Name>
+					<X>50</X><Y>340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1508248913036</Id>
+					<Name><![CDATA[backlogComplete]]></Name>
+					<X>860</X><Y>40</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[36]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1508248913034</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+			</Variables>
+			<Connectors>
+				<Connector>
+					<Id>1508248913680</Id>
+					<Name><![CDATA[connector16]]></Name>
+					<X>210</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[SelectTeam]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieSource]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Source]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-100</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913684</Id>
+					<Name><![CDATA[connector17]]></Name>
+					<X>220</X><Y>170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[selectTeam1]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[SelectTeam]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outF]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>-80</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913688</Id>
+					<Name><![CDATA[connector18]]></Name>
+					<X>600</X><Y>170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[queue1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-20</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913692</Id>
+					<Name><![CDATA[connector19]]></Name>
+					<X>670</X><Y>170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[endOfStorie]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Sink]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-50</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913697</Id>
+					<Name><![CDATA[connector20]]></Name>
+					<X>480</X><Y>260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieInProgressTeamC]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[queue1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>-90</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913702</Id>
+					<Name><![CDATA[connector21]]></Name>
+					<X>480</X><Y>170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieInProgressTeamB]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[queue1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913707</Id>
+					<Name><![CDATA[connector22]]></Name>
+					<X>480</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieInProgressTeamA]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[queue1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>30</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>90</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913712</Id>
+					<Name><![CDATA[connector23]]></Name>
+					<X>390</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold1]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieInProgressTeamA]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>50</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913715</Id>
+					<Name><![CDATA[connector24]]></Name>
+					<X>390</X><Y>170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold2]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieInProgressTeamB]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>50</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913718</Id>
+					<Name><![CDATA[connector25]]></Name>
+					<X>390</X><Y>260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold3]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieInProgressTeamC]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>50</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913721</Id>
+					<Name><![CDATA[connector26]]></Name>
+					<X>230</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[SelectTeam]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outT]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieQueueTeamA]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913724</Id>
+					<Name><![CDATA[connector27]]></Name>
+					<X>310</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieQueueTeamA]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913729</Id>
+					<Name><![CDATA[connector28]]></Name>
+					<X>240</X><Y>170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[selectTeam1]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outT]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[StorieQueueTeamB]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913735</Id>
+					<Name><![CDATA[connector29]]></Name>
+					<X>320</X><Y>170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[StorieQueueTeamB]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold2]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>50</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913740</Id>
+					<Name><![CDATA[connector30]]></Name>
+					<X>230</X><Y>180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[selectTeam1]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outF]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[StorieQueueTeamC]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>80</Y></Point>
+						<Point><X>50</X><Y>80</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913744</Id>
+					<Name><![CDATA[connector31]]></Name>
+					<X>320</X><Y>260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[StorieQueueTeamC]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold3]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>50</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1508248913749</Id>
+					<Name><![CDATA[connector32]]></Name>
+					<X>210</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[SelectTeam]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[scrum_simulation]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[storieSource]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Source]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-100</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+			</Connectors>
+			<Events>
+				<Event>
+					<Id>1508248913016</Id>
+					<Name><![CDATA[Begin]]></Name>
+					<X>70</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1507968000000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[injectStorie();
+injectStorie();
+injectStorie();]]></Action>
+				</Event>
+				<Event>
+					<Id>1508248913021</Id>
+					<Name><![CDATA[teamCIsIdle]]></Name>
+					<X>70</X><Y>220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="rate" Mode="userControls">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1507968000000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[hold1.isBlocked()&& time()>=finishTimeTeamA]]></Condition>
+					</Properties>
+					<Action><![CDATA[if(!hold3.isBlocked()&& getTime()>0.01){
+injectStorieC();
+}]]></Action>
+				</Event>
+				<Event>
+					<Id>1508248913026</Id>
+					<Name><![CDATA[teamBIsIdle]]></Name>
+					<X>70</X><Y>200</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="rate" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1507968000000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[hold2.isBlocked()&& time()>=finishTimeTeamB]]></Condition>
+					</Properties>
+					<Action><![CDATA[if(!hold2.isBlocked()&& getTime()>0.01){
+injectStorieB();}]]></Action>
+				</Event>
+				<Event>
+					<Id>1508248913031</Id>
+					<Name><![CDATA[teamAIsIdle]]></Name>
+					<X>70</X><Y>180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="rate" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1507968000000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[hold3.isBlocked()&& time()>=finishTimeTeamC]]></Condition>
+					</Properties>
+					<Action><![CDATA[if(!hold1.isBlocked()&& getTime()>0.01){
+injectStorieA();}]]></Action>
+				</Event>
+			</Events>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1508248912618</Id>
+					<Name><![CDATA[injectStorie]]></Name>
+					<X>680</X><Y>70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[
+String status;
+String usable;
+int locksActivity;
+
+int rowIndex;
+int columnIndex;
+
+//rowIndex=1;
+columnIndex=1;
+if(iterations<backlogComplete){
+iterations++;	
+ currentStorie =new Storie();
+
+
+for (int i=2;i<=backlogComplete+1;i++){
+
+if(scrumBacklog.getCellStringValue(1,i, columnIndex+1).equals("To be done") && scrumBacklog.getCellStringValue(1,i, columnIndex+2).equals("Yes")){
+
+	currentStorie.storiePoints1=scrumBacklog.getCellNumericValue(1,i,columnIndex+4);
+    currentStorie.storiePoints2=scrumBacklog.getCellNumericValue(1,i,columnIndex+5);
+    currentStorie.storiePoints3=scrumBacklog.getCellNumericValue(1,i,columnIndex+6);
+    currentStorie.velocity1=scrumBacklog.getCellNumericValue(1,i,columnIndex+7);
+    currentStorie.velocity2=scrumBacklog.getCellNumericValue(1,i,columnIndex+8);
+    currentStorie.velocity3=scrumBacklog.getCellNumericValue(1,i,columnIndex+9);
+    currentStorie.valuePoints=scrumBacklog.getCellNumericValue(1,i,columnIndex+10);
+ 	currentStorie.name=scrumBacklog.getCellStringValue(1,i,columnIndex);
+ 	locksActivity= (int) scrumBacklog.getCellNumericValue(1,i, columnIndex+3);    
+    scrumBacklog.setCellValue("Done", 1, i, columnIndex+1);
+     if(locksActivity>0){
+     
+       int rowToChange  =locksActivity +1;
+       scrumBacklog.setCellValue("Yes", 1, rowToChange, columnIndex+2);
+     }
+      
+
+storieSource.inject(1);
+
+break;
+}
+
+}
+
+
+
+}]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1508248912629</Id>
+					<Name><![CDATA[injectStorieA]]></Name>
+					<X>800</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[
+String status;
+String usable;
+int locksActivity;
+
+int rowIndex;
+int columnIndex;
+int done;
+double bfb;
+
+//rowIndex=1;
+columnIndex=1;
+if(iterations<backlogComplete){
+iterations++;	
+currentStorie =new Storie();
+bfb=0;
+done=1;
+locksActivity = 0;
+for (int i=2;i<=backlogComplete+1;i++){
+
+double bfbIteration=scrumBacklog.getCellNumericValue(1,i,columnIndex+10)/scrumBacklog.getCellNumericValue(1,i,columnIndex+4);
+
+if(bfbIteration>bfb && scrumBacklog.getCellStringValue(1,i, columnIndex+1).equals("To be done") && scrumBacklog.getCellStringValue(1,i, columnIndex+2).equals("Yes")){
+	bfb=bfbIteration;
+	currentStorie.storiePoints1=scrumBacklog.getCellNumericValue(1,i,columnIndex+4);
+    currentStorie.storiePoints2=scrumBacklog.getCellNumericValue(1,i,columnIndex+5);
+    currentStorie.storiePoints3=scrumBacklog.getCellNumericValue(1,i,columnIndex+6);
+    currentStorie.velocity1=scrumBacklog.getCellNumericValue(1,i,columnIndex+7);
+    currentStorie.velocity2=scrumBacklog.getCellNumericValue(1,i,columnIndex+8);
+    currentStorie.velocity3=scrumBacklog.getCellNumericValue(1,i,columnIndex+9);
+    currentStorie.valuePoints=scrumBacklog.getCellNumericValue(1,i,columnIndex+10);
+ 	currentStorie.name=scrumBacklog.getCellStringValue(1,i,columnIndex);
+ 	locksActivity= (int) scrumBacklog.getCellNumericValue(1,i, columnIndex+3);    
+    done=i;
+     
+}
+
+}
+scrumBacklog.setCellValue("Done", 1, done, columnIndex+1);
+ 
+   if(locksActivity>0){
+       int rowToChange  =locksActivity +1;
+       scrumBacklog.setCellValue("Yes", 1, rowToChange, columnIndex+2);
+     }
+
+storieSource.inject(1);
+
+}]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1508248912640</Id>
+					<Name><![CDATA[injectStorieB]]></Name>
+					<X>800</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[
+String status;
+String usable;
+int locksActivity;
+int done;
+int rowIndex;
+int columnIndex;
+double bfb;
+
+//rowIndex=1;
+columnIndex=1;
+if(iterations<backlogComplete){
+iterations++;	
+currentStorie =new Storie();
+bfb=0;
+done=1;
+locksActivity = 0;
+for (int i=2;i<=backlogComplete+1;i++){
+
+
+double bfbIteration=scrumBacklog.getCellNumericValue(1,i,columnIndex+10)/scrumBacklog.getCellNumericValue(1,i,columnIndex+5);
+
+if(bfbIteration>bfb && scrumBacklog.getCellStringValue(1,i, columnIndex+1).equals("To be done") && scrumBacklog.getCellStringValue(1,i, columnIndex+2).equals("Yes")){
+	bfb=bfbIteration;
+	currentStorie.storiePoints1=scrumBacklog.getCellNumericValue(1,i,columnIndex+4);
+    currentStorie.storiePoints2=scrumBacklog.getCellNumericValue(1,i,columnIndex+5);
+    currentStorie.storiePoints3=scrumBacklog.getCellNumericValue(1,i,columnIndex+6);
+    currentStorie.velocity1=scrumBacklog.getCellNumericValue(1,i,columnIndex+7);
+    currentStorie.velocity2=scrumBacklog.getCellNumericValue(1,i,columnIndex+8);
+    currentStorie.velocity3=scrumBacklog.getCellNumericValue(1,i,columnIndex+9);
+    currentStorie.valuePoints=scrumBacklog.getCellNumericValue(1,i,columnIndex+10);
+ 	currentStorie.name=scrumBacklog.getCellStringValue(1,i,columnIndex);
+ 	locksActivity= (int) scrumBacklog.getCellNumericValue(1,i, columnIndex+3);    
+
+  	done=i;
+     
+}
+
+}
+    scrumBacklog.setCellValue("Done", 1, done, columnIndex+1);
+   if(locksActivity>0){
+       int rowToChange  =locksActivity +1;
+       scrumBacklog.setCellValue("Yes", 1, rowToChange, columnIndex+2);
+     }
+
+storieSource.inject(1);
+
+}]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1508248912651</Id>
+					<Name><![CDATA[injectStorieC]]></Name>
+					<X>800</X><Y>160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[String status;
+String usable;
+int locksActivity;
+int done;
+int rowIndex;
+int columnIndex;
+double bfb;
+
+//rowIndex=1;
+columnIndex=1;
+if(iterations<backlogComplete){
+iterations++;	
+currentStorie =new Storie();
+bfb=0;
+done=1;
+locksActivity = 0;
+for (int i=2;i<=backlogComplete+1;i++){
+
+
+double bfbIteration=scrumBacklog.getCellNumericValue(1,i,columnIndex+10)/scrumBacklog.getCellNumericValue(1,i,columnIndex+6);
+
+if(bfbIteration>bfb && scrumBacklog.getCellStringValue(1,i, columnIndex+1).equals("To be done") && scrumBacklog.getCellStringValue(1,i, columnIndex+2).equals("Yes")){
+	bfb=bfbIteration;
+	currentStorie.storiePoints1=scrumBacklog.getCellNumericValue(1,i,columnIndex+4);
+    currentStorie.storiePoints2=scrumBacklog.getCellNumericValue(1,i,columnIndex+5);
+    currentStorie.storiePoints3=scrumBacklog.getCellNumericValue(1,i,columnIndex+6);
+    currentStorie.velocity1=scrumBacklog.getCellNumericValue(1,i,columnIndex+7);
+    currentStorie.velocity2=scrumBacklog.getCellNumericValue(1,i,columnIndex+8);
+    currentStorie.velocity3=scrumBacklog.getCellNumericValue(1,i,columnIndex+9);
+    currentStorie.valuePoints=scrumBacklog.getCellNumericValue(1,i,columnIndex+10);
+ 	currentStorie.name=scrumBacklog.getCellStringValue(1,i,columnIndex);
+ 	locksActivity= (int) scrumBacklog.getCellNumericValue(1,i, columnIndex+3);    
+ 
+  	done=i;
+     
+}
+
+}
+   scrumBacklog.setCellValue("Done", 1, done, columnIndex+1);
+   if(locksActivity>0){
+       int rowToChange  =locksActivity +1;
+       scrumBacklog.setCellValue("Yes", 1, rowToChange, columnIndex+2);
+     }
+
+storieSource.inject(1);
+
+}]]></Body>
+				</Function>
+			</Functions>
+			<Connectivity>
+				<ExcelFile>
+					<Id>1508248912763</Id>
+					<Name><![CDATA[scrumBacklog]]></Name>
+					<X>860</X><Y>60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<FileName><![CDATA[D:/Scrum-project/Project Files/Pasta1.xlsx]]></FileName>
+					<SaveInSnapshot>false</SaveInSnapshot>
+					<LoadOnStartup>true</LoadOnStartup>
+					<SaveOnDispose>true</SaveOnDispose>
+				</ExcelFile>
+			</Connectivity>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1507912910296</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+			<EmbeddedObjects>
+				<EmbeddedObject>
+					<Id>1508248913056</Id>
+					<Name><![CDATA[storieSource]]></Name>
+					<X>80</X><Y>70</Y>
+					<Label><X>-5</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Source]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Source]]></ClassName>
+							<ItemName><![CDATA[1412336242928]]></ItemName>
+						</GenericParameterSubstituteReference>
+						<GenericParameterSubstituteValue Class="CodeValue">
+							<Code><![CDATA[Storie]]></Code>
+						</GenericParameterSubstituteValue>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[arrivalType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.MANUAL]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[rate]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[interarrivalTime]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[rateSchedule]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[modifyRate]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[rateExpression]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[arrivalSchedule]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[setAgentParametersFromDB]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[databaseTable]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[arrivalDate]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[multipleEntitiesPerArrival]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entitiesPerArrival]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[limitArrivals]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maxArrivals]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[newEntity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[currentStorie;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationZ]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationLatitude]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationLongitude]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationGeoPlaceName]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationXYZInNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationNode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationAttractor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[speed]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enableCustomStartTime]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[startTime]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[addToCustomPopulation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[population]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[discardHangingEntities]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onBeforeArrival]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[
+int queueASize=storieQueueTeamA.size();
+int queueBSize= StorieQueueTeamB.size();
+int queueCSize=StorieQueueTeamC.size();
+
+if(!hold1.isBlocked()&&queueASize==0){
+
+finishPrevisionTimeA = getTime()+ agent.storiePoints1/agent.velocity1;  
+
+}
+
+else{
+double queuePrevisionTimeA =0;
+ for(int i=0;i<queueASize;i++){
+ Storie queuedStorie = storieQueueTeamA.get(i);
+ queuePrevisionTimeA=queuePrevisionTimeA+ queuedStorie.storiePoints1/queuedStorie.velocity1;
+ }
+
+finishPrevisionTimeA = queuePrevisionTimeA+finishTimeTeamA+ agent.storiePoints1/agent.velocity1;  
+
+}
+
+if(!hold2.isBlocked()&&queueBSize==0){
+finishPrevisionTimeB = getTime()+ agent.storiePoints2/agent.velocity2;  
+}
+
+
+else{
+ double queuePrevisionTimeB =0;
+ for(int i=0;i<queueBSize;i++){
+ Storie queuedStorie = StorieQueueTeamB.get(i);
+ queuePrevisionTimeB=queuePrevisionTimeB+ queuedStorie.storiePoints2/queuedStorie.velocity2;
+ }
+
+finishPrevisionTimeB = queuePrevisionTimeB+finishTimeTeamB+ agent.storiePoints2/agent.velocity2;  
+ 
+}
+
+if(!hold3.isBlocked()&&queueCSize==0){
+finishPrevisionTimeC = getTime()+ agent.storiePoints3/agent.velocity3;  
+}
+
+
+else{
+ double queuePrevisionTimeC =0;
+ for(int i=0;i<queueCSize;i++){
+ Storie queuedStorie = StorieQueueTeamC.get(i);
+ queuePrevisionTimeC=queuePrevisionTimeC+ queuedStorie.storiePoints3/queuedStorie.velocity3;
+ }
+
+finishPrevisionTimeC = queuePrevisionTimeC+finishTimeTeamC+ agent.storiePoints3/agent.velocity3;  
+ 
+}
+
+
+
+
+]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onDiscard]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913153</Id>
+					<Name><![CDATA[storieInProgressTeamB]]></Name>
+					<X>440</X><Y>150</Y>
+					<Label><X>-30</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Delay]]></ClassName>
+							<ItemName><![CDATA[1412336242930]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[agent.storiePoints2/agent.velocity2]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[storiesB++;
+scrumBacklog.setCellValue(agent.name, 2, storiesB+2, 2);
+scrumBacklog.setCellValue(time(), 2, storiesB+2, 6);
+finishTimeTeamB= getTime()+agent.storiePoints2/agent.velocity2; 
+BfbBac=BfbBac+agent.valuePoints/agent.storiePoints2;
+BfbB=BfbBac/storiesB;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[acumulator=acumulator+agent.valuePoints/agent.storiePoints2;
+bangForTheBucket=acumulator/(storiesA+storiesB+storiesC);
+scrumBacklog.setCellValue(time(), 2, storiesB+2, 7);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[hold2.unblock();]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913196</Id>
+					<Name><![CDATA[storieInProgressTeamC]]></Name>
+					<X>440</X><Y>240</Y>
+					<Label><X>-30</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Delay]]></ClassName>
+							<ItemName><![CDATA[1412336242930]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[agent.storiePoints3/agent.velocity3]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[storiesC++;
+scrumBacklog.setCellValue(agent.name, 2, storiesC+2, 3);
+scrumBacklog.setCellValue(time(), 2, storiesC+2, 8);
+finishTimeTeamC= getTime()+agent.storiePoints3/agent.velocity3;
+BfbCac=BfbCac+agent.valuePoints/agent.storiePoints3;
+BfbC=BfbCac/storiesC;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[acumulator=acumulator+agent.valuePoints/agent.storiePoints3;
+bangForTheBucket=acumulator/(storiesA+storiesB+storiesC);
+scrumBacklog.setCellValue(time(), 2, storiesC+2, 9);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[hold3.unblock();]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913245</Id>
+					<Name><![CDATA[SelectTeam]]></Name>
+					<X>200</X><Y>70</Y>
+					<Label><X>-25</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[SelectOutput]]></ClassName>
+							<ItemName><![CDATA[1412336242931]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[conditionIsProbabilistic]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[finishPrevisionTimeA<finishPrevisionTimeB &&finishPrevisionTimeA<finishPrevisionTimeC]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTrue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitFalse]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913289</Id>
+					<Name><![CDATA[selectTeam1]]></Name>
+					<X>210</X><Y>160</Y>
+					<Label><X>-25</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[SelectOutput]]></ClassName>
+							<ItemName><![CDATA[1412336242931]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[conditionIsProbabilistic]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[finishPrevisionTimeB<finishPrevisionTimeC]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[finishPrevisionB<finishPrevisionC]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTrue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitFalse]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913329</Id>
+					<Name><![CDATA[queue1]]></Name>
+					<X>540</X><Y>150</Y>
+					<Label><X>-5</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Queue]]></ClassName>
+							<ItemName><![CDATA[1412336242932]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[queuing]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[priority]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[comparison]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enableTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[timeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enablePreemption]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitPreempted]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913373</Id>
+					<Name><![CDATA[hold]]></Name>
+					<X>600</X><Y>160</Y>
+					<Label><X>-10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Hold]]></ClassName>
+							<ItemName><![CDATA[1412336242940]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[nEntitiesForSelfBlock]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[initiallyBlocked]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[hold.block();]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913412</Id>
+					<Name><![CDATA[endOfStorie]]></Name>
+					<X>670</X><Y>160</Y>
+					<Label><X>-5</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Sink]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Sink]]></ClassName>
+							<ItemName><![CDATA[1412336242929]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[hold.unblock();
+valuePointsBurnDown=valuePointsBurnDown-agent.valuePoints;
+injectStorie();]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destroyEntity]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913451</Id>
+					<Name><![CDATA[storieInProgressTeamA]]></Name>
+					<X>440</X><Y>60</Y>
+					<Label><X>-20</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Delay]]></ClassName>
+							<ItemName><![CDATA[1412336242930]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[agent.storiePoints1/agent.velocity1]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[storiesA++;
+scrumBacklog.setCellValue(agent.name, 2,storiesA+2, 1);
+scrumBacklog.setCellValue(time(), 2, storiesA+2, 4);
+finishTimeTeamA= getTime()+agent.storiePoints1/agent.velocity1;
+BfbAac=BfbAac+agent.valuePoints/agent.storiePoints1;
+BfbA=BfbAac/storiesA;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[acumulator=acumulator+agent.valuePoints/agent.storiePoints1;
+bangForTheBucket=acumulator/(storiesA+storiesB+storiesC);
+scrumBacklog.setCellValue(time(), 2, storiesA+2, 5);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[hold1.unblock();]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913495</Id>
+					<Name><![CDATA[hold1]]></Name>
+					<X>370</X><Y>70</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Hold]]></ClassName>
+							<ItemName><![CDATA[1412336242940]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[nEntitiesForSelfBlock]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[initiallyBlocked]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[hold1.block();]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913531</Id>
+					<Name><![CDATA[hold2]]></Name>
+					<X>370</X><Y>160</Y>
+					<Label><X>5</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Hold]]></ClassName>
+							<ItemName><![CDATA[1412336242940]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[nEntitiesForSelfBlock]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[initiallyBlocked]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[hold2.block();
+]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913565</Id>
+					<Name><![CDATA[hold3]]></Name>
+					<X>370</X><Y>250</Y>
+					<Label><X>-10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Hold]]></ClassName>
+							<ItemName><![CDATA[1412336242940]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[nEntitiesForSelfBlock]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[initiallyBlocked]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[hold3.block();
+]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913591</Id>
+					<Name><![CDATA[storieQueueTeamA]]></Name>
+					<X>270</X><Y>60</Y>
+					<Label><X>-20</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Queue]]></ClassName>
+							<ItemName><![CDATA[1412336242932]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[queuing]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[priority]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[comparison]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enableTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[timeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enablePreemption]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitPreempted]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913621</Id>
+					<Name><![CDATA[StorieQueueTeamB]]></Name>
+					<X>280</X><Y>150</Y>
+					<Label><X>-25</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Queue]]></ClassName>
+							<ItemName><![CDATA[1412336242932]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[queuing]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[priority]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[comparison]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enableTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[timeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enablePreemption]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitPreempted]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1508248913652</Id>
+					<Name><![CDATA[StorieQueueTeamC]]></Name>
+					<X>280</X><Y>240</Y>
+					<Label><X>-30</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Queue]]></ClassName>
+							<ItemName><![CDATA[1412336242932]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[queuing]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[priority]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[comparison]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enableTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[timeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enablePreemption]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitPreempted]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+			</EmbeddedObjects>
+
+			<Charts>
+    			<TimePlot>
+					<Id>1508248912477</Id>
+					<Name><![CDATA[chart6]]></Name>
+					<X>460</X><Y>330</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1508054400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor/>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Avarage BFB]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-16776961</Color>
+					<Expression2><![CDATA[6.188]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Current BFB]]></Title>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-2987746</Color>
+					<Expression2><![CDATA[bangForTheBucket]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>10000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3]]></TimeWindowExpression>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1508248912536</Id>
+					<Name><![CDATA[chart7]]></Name>
+					<X>675</X><Y>1036</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1508054400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>450</Width>
+					<Height>180</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>370</Width>
+						<Height>90</Height>
+						<BackgroundColor/>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Team A Bfb]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-16776961</Color>
+					<Expression2><![CDATA[BfbA]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Team B Bfb]]></Title>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-2987746</Color>
+					<Expression2><![CDATA[BfbB]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Team C Bfb]]></Title>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-16744448</Color>
+					<Expression2><![CDATA[BfbC]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>10000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3]]></TimeWindowExpression>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1508248912573</Id>
+					<Name><![CDATA[chart8]]></Name>
+					<X>730</X><Y>370</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1508054400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor/>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Value Points Burndown]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-16744448</Color>
+					<Expression2><![CDATA[valuePointsBurnDown]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>10000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3]]></TimeWindowExpression>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1508249047584</Id>
+					<Name><![CDATA[chart4]]></Name>
+					<X>30</X><Y>370</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1508054400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>450</Width>
+					<Height>180</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>370</Width>
+						<Height>90</Height>
+						<BackgroundColor/>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Team A Bfb]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-16776961</Color>
+					<Expression2><![CDATA[BfbA]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Team B Bfb]]></Title>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-2987746</Color>
+					<Expression2><![CDATA[BfbB]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Team C Bfb]]></Title>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-16744448</Color>
+					<Expression2><![CDATA[BfbC]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>10000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3]]></TimeWindowExpression>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+			</Charts>
+
+		</ActiveObjectClass>
+		<!--   =========   Active Object Class   ========  -->
+		<ActiveObjectClass>
+			<Id>1507913078156</Id>
+			<Name><![CDATA[Storie]]></Name>
+			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
+			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<Generic>false</Generic>
+			<GenericParameter>
+				<Id>1507913078155</Id>
+				<Name><![CDATA[1507913078155]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
+			<MakeDefaultViewArea>true</MakeDefaultViewArea>
+			<SceneGridColor/>
+			<SceneBackgroundColor/>
+			<AgentProperties>
+	 			<SpaceType>CONTINUOUS</SpaceType>			
+				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
+			</AgentProperties>
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1507968000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1507913078153</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<ConnectionsId>1507913078152</ConnectionsId>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1507913232762</Id>
+					<Name><![CDATA[storiePoints1]]></Name>
+					<X>30</X><Y>40</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1507913232769</Id>
+					<Name><![CDATA[velocity1]]></Name>
+					<X>220</X><Y>40</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1507913232772</Id>
+					<Name><![CDATA[storiePoints3]]></Name>
+					<X>30</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1507913232776</Id>
+					<Name><![CDATA[storiePoints2]]></Name>
+					<X>30</X><Y>90</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1507913232778</Id>
+					<Name><![CDATA[velocity2]]></Name>
+					<X>220</X><Y>90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1507913232780</Id>
+					<Name><![CDATA[velocity3]]></Name>
+					<X>220</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1507913232783</Id>
+					<Name><![CDATA[valuePoints]]></Name>
+					<X>330</X><Y>40</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1507945696224</Id>
+					<Name><![CDATA[name]]></Name>
+					<X>30</X><Y>190</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[String]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1508103461424</Id>
+					<Name><![CDATA[number]]></Name>
+					<X>240</X><Y>190</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+			</Variables>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1507913078152</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+
+
+		</ActiveObjectClass>
+	</ActiveObjectClasses>	
+	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
+	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
+	<AlgebraicEquationsMethod>MODIFIED_NEWTON</AlgebraicEquationsMethod>
+	<AbsoluteAccuracy>1.0E-5</AbsoluteAccuracy>
+	<FixedTimeStep>0.001</FixedTimeStep>
+	<RelativeAccuracy>1.0E-5</RelativeAccuracy>
+	<TimeAccuracy>1.0E-5</TimeAccuracy>
+	<Frame>
+		<Width>1000</Width>
+		<Height>600</Height>
+	</Frame>
+	<Database>
+		<Logging>true</Logging>
+		<AutoExport>false</AutoExport>
+		<ImportSettings>
+		</ImportSettings>
+		<ExportSettings>
+			<ExportExcelFilePath><![CDATA[]]></ExportExcelFilePath>
+		</ExportSettings>
+	</Database>
+	
+	<RunConfiguration ActiveObjectClassId="1507912910300">
+		<Id>1507912910305</Id>
+		<Name><![CDATA[RunConfiguration]]></Name>
+		<ModelTimeProperties>
+			<StopOption><![CDATA[Stop at specified time]]></StopOption>
+			<InitialDate><![CDATA[1507852800000]]></InitialDate>	
+			<InitialTime><![CDATA[0.0]]></InitialTime>	
+			<FinalDate><![CDATA[1510531200000]]></FinalDate>	
+			<FinalTime><![CDATA[100.0]]></FinalTime>	
+		</ModelTimeProperties>
+		<AnimationProperties>
+			<StopNever>true</StopNever>
+			<ExecutionMode>realTimeScaled</ExecutionMode>
+			<RealTimeScale>1.0</RealTimeScale>
+			<EnableZoomAndPanning>true</EnableZoomAndPanning>
+			<Maximized>false</Maximized>
+		</AnimationProperties>
+		<Inputs>		
+		</Inputs>
+		<Outputs>
+		</Outputs>
+	</RunConfiguration>
+	<Experiments>	
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1507912910300">
+			<Id>1507912910302</Id>
+			<Name><![CDATA[Simulation]]></Name>
+			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
+			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+			<SnapshotFile></SnapshotFile>
+
+			<Shapes>
+				<Text>
+					<Id>1507912910303</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>40</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[Scrum_Simulation]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+			<Controls>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1507912910304</Id>
+					<Name><![CDATA[button]]></Name>
+					<X>40</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[if ( getState() == IDLE )
+	run();
+getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[Run]]></LabelText>
+						<LabelCode><![CDATA[getState() == IDLE ?
+	"Run" :
+	"Top level agent"]]></LabelCode>
+					</ExtendedProperties>
+				</Control>
+			</Controls>
+
+			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[backlogComplete]]></ParameterName>
+				</Parameter>
+			</Parameters>			
+			<PresentationProperties 
+				EnableAdaptiveFrameManagement="true" 
+				EnableAntiAliasing="true"
+				EnableEnhancedModelElementsAnimation="true"
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<CpuRatio><![CDATA[ratio_1_2]]></CpuRatio>	        
+				<Title><![CDATA[Scrum_Simulation : Simulation]]></Title>	
+				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
+				<RealTimeScale>1.0</RealTimeScale>
+				<UIProperty Name="Experiment Progress" Value="false"/>
+				<UIProperty Name="Simulation Progress" Value="true"/>
+				<UIProperty Name="Statusbar Events Per Second" Value="false"/>
+				<UIProperty Name="Statusbar Frames Per Second" Value="false"/>
+				<UIProperty Name="Statusbar Memory" Value="true"/>
+				<UIProperty Name="Statusbar Model Date" Value="true"/>
+				<UIProperty Name="Statusbar Model Step" Value="false"/>
+				<UIProperty Name="Statusbar Model Time" Value="true"/>
+				<UIProperty Name="Statusbar Real Time Of Simulation" Value="false"/>
+				<UIProperty Name="Statusbar Status" Value="true"/>
+				<UIProperty Name="Toolbar Animation setup" Value="false"/>
+				<UIProperty Name="Toolbar Execution control" Value="true"/>
+				<UIProperty Name="Toolbar File" Value="false"/>
+				<UIProperty Name="Toolbar Model navigation" Value="true"/>
+				<UIProperty Name="Toolbar Time scale setup" Value="true"/>
+				<UIProperty Name="Toolbar View" Value="false"/>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Never]]></StopOption>
+				<InitialDate><![CDATA[1507852800000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[1510531200000]]></FinalDate>	
+				<FinalTime><![CDATA[100.0]]></FinalTime>	
+			</ModelTimeProperties>
+		</SimulationExperiment>	
+	</Experiments>
+    <RequiredLibraryReference>
+		<LibraryName><![CDATA[com.anylogic.libraries.processmodeling]]></LibraryName>
+		<VersionMajor>8</VersionMajor>
+		<VersionMinor>0</VersionMinor>
+		<VersionBuild>5</VersionBuild>
+    </RequiredLibraryReference>
+</Model>
+</AnyLogicWorkspace>
